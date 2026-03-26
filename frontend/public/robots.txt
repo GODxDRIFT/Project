@@ -1,0 +1,16 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Block private pages from indexing
+Disallow: /pages/Profile
+Disallow: /pages/mybusiness
+Disallow: /pages/checkout
+Disallow: /pages/verify-otp
+Disallow: /pages/forgot-password
+
+# Host
+Host: https://biziffy.com
+
+# Sitemap
+Sitemap: https://biziffy.com/sitemap.xml

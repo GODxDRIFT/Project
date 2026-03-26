@@ -1,0 +1,136 @@
+/* Section padding */
+.home-category-section {
+  margin: 40px 0;
+  padding-inline: 10px;
+}
+
+/* Swiper wrapper */
+.home-category-swiper {
+  padding: 0px 0;
+}
+
+/* Card container */
+.home-category-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0px;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 95%;
+}
+
+
+
+/* Optional glowing shine */
+.home-category-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  /* background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg); */
+  /* transition: left 0.75s ease; */
+}
+
+.home-category-card:hover::before {
+  left: 125%;
+}
+
+.home-category-card:hover {
+  /* transform: translateY(-10px); */
+  /* box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15); */
+}
+
+/* Card image */
+.home-category-card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.home-category-card:hover .home-category-card-image {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Card body */
+.card-body {
+  padding-top: 14px;
+  text-align: center;
+}
+
+/* Title */
+.home-category-card-title {
+  font-size: 14px !important;
+  font-weight: 500;
+  color: #1f1f1f;
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.3s ease;
+}
+
+.home-category-card:hover .home-category-card-title {
+  color: #0077cc;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+
+  .corporate-descri {
+    font-size: 12px !important;
+  }
+
+  .home-category-card {
+    padding: 0;
+  }
+
+  .home-category-swiper {
+    padding: 0;
+  }
+
+  .home-category-section {
+    margin: 0;
+  }
+
+  .home-category-section .container {
+    padding: 0;
+  }
+
+  .home-category-card-image {
+    height: 130px;
+  }
+
+  .home-category-card-title {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-category-card {
+    border-radius: 14px;
+    padding: 0;
+  }
+
+  .home-category-card-image {
+    height: 130px;
+    object-fit: fill;
+  }
+}

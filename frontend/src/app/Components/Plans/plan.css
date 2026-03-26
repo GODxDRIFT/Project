@@ -1,0 +1,84 @@
+.plan-table th,
+.plan-table td {
+    vertical-align: middle;
+    padding: 0.75rem;
+}
+
+.plan-table .plan-header {
+    background-color: #e9f5ff;
+}
+
+.plan-table .table-warning {
+    background-color: #fff3cd !important;
+}
+
+.plan-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.plan-table td {
+    font-size: 0.95rem;
+}
+
+.plan-table .btn {
+    transition: all 0.3s ease;
+}
+
+.plan-table .btn:hover {
+    transform: scale(1.05);
+}
+
+.custom-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.custom-modal-card {
+    background: #fff;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    animation: fadeSlideIn 0.3s ease;
+    overflow: hidden;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    transition: 0.2s ease;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.alert-warning {
+    font-size: 0.95rem;
+    background-color: #fff9db;
+    border-left: 5px solid #f9c74f;
+}
